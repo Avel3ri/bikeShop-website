@@ -1,0 +1,178 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+  color: white;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+#nav-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  text-align: center;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  margin: 70px 77px 70px;
+}
+
+#logo {
+  justify-self: start;
+  filter: brightness(0) invert(1);
+}
+
+#menu img {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+#pages {
+  text-align: right;
+  list-style: none;
+}
+
+#pages > li {
+  display: inline-block;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding-left: 50px;
+}
+
+/* Main */
+#main {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+
+#red-blur {
+  position: absolute;
+
+  left: -50%;
+  bottom: -50%;
+
+  width: 940px;
+  height: 940px;
+  /* z-index: -1; */
+
+  flex-shrink: 0;
+
+  border-radius: 940px;
+  background: var(--radical-red-0, #851932);
+  filter: blur(150px);
+}
+
+#bike {
+  position: absolute;
+  bottom: 0;
+  left: -230px;
+
+  width: 617.361px;
+  height: 331px;
+  flex-shrink: 0;
+}
+
+#left {
+  width: 50%;
+  height: 100%;
+
+  background: rgba(11, 14, 16, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#body {
+  color: var(--woodsmoke-100, #fff);
+
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85px; /* 106.25% */
+
+  position: relative;
+
+  padding-left: 198px;
+  padding-top: 232px;
+
+  z-index: 1;
+
+  /* top: 232px; */
+  /* left: 198px; */
+}
+
+#description {
+  margin-top: 50px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 487px;
+}
+
+#buttons {
+  font-size: 16px;
+}
+
+.book-btn {
+  padding: 18px 38px;
+  border-radius: 10px;
+  background-color: #ff3465;
+}
+
+.book-btn:hover {
+  background-color: #c4294d;
+}
+
+.config-btn {
+  margin-left: 15px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/* media */
+.media {
+  position: absolute;
+  bottom: -220px;
+  right: 98px;
+}
+
+.media > * {
+  filter: brightness(0) invert(1);
+}
+
+/* Others */
+a:hover,
+a {
+  text-decoration: none;
+}
+
+.red {
+  color: var(--radical-red-0, #ff3465);
+}
+
+.gray {
+  color: var(--woodsmoke-60, #a5a5a5);
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.span-small {
+  font-size: 50px;
+}
